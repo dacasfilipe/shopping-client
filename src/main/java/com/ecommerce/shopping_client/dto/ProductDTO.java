@@ -1,5 +1,6 @@
 package com.ecommerce.shopping_client.dto;
 
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
@@ -21,6 +22,7 @@ public class ProductDTO {
     @NotNull
     private Float preco;
     @NotNull
+    @Valid
     private CategoryDTO categoryDTO;
 
 }
